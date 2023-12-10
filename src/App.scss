@@ -1,0 +1,11 @@
+.faq-accordion-card-container {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(275, 100%, 97%);
+    background-image: url("./assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: border-box;
+    background-attachment: fixed;
+}
