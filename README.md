@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Repository URL](https://github.com/NiroopR1999/FAQ-Accordion)
-- Live Site URL: [Live URL](https://your-live-site-url.com)
+- Live Site URL: [Live URL](https://niroopr1999.github.io/FAQ-Accordion)
 
 ## My process
 
