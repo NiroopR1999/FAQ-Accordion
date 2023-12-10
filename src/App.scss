@@ -1,6 +1,6 @@
 .faq-accordion-card-container {
-    height: 100vh;
     display: grid;
+    height: 100dvh;
     place-items: center;
     background-color: hsl(275, 100%, 97%);
     background-image: url("./assets/images/background-pattern-desktop.svg");
@@ -8,4 +8,87 @@
     background-size: contain;
     background-origin: border-box;
     background-attachment: fixed;
+    .faq-accordion-card {
+        width: min(calc(100% - 48px), 600px);
+        background-color: hsl(0, 0%, 100%);
+        border-radius: 1rem;
+        padding: 2.5rem;
+        box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.1);
+        .faq-accordion-card-header {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            h1 {
+                font-weight: 700;
+                color: hsl(292, 42%, 14%);
+                font-size: 3.5rem;
+            }
+        }
+        .faq-accordion-card-body {
+            display: grid;
+
+            .faq-accordion-card-body-content {
+                background-color: hsl(0, 0%, 100%);
+                .faq-accordion-card-body-content-question {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    cursor: pointer;
+
+                    h3 {
+                        font-weight: 600;
+                        color: hsl(292, 42%, 14%);
+                        font-size: 18px;
+                    }
+                    h3:hover {
+                        color: #ad28eb;
+                    }
+                }
+                .faq-accordion-card-body-content-answer {
+                    font-size: 1rem;
+                    font-weight: 400;
+                    color: hsl(292, 16%, 49%);
+                    margin: 1rem 0rem;
+                    line-height: 150%;
+                }
+            }
+            hr {
+                margin: 20px 0;
+                height: 1px;
+                background-color: #f8eeff;
+                border: none;
+            }
+        }
+    }
+}
+@media (max-width: 375px) {
+    .faq-accordion-card-container {
+        background-image: url("./assets/images/background-pattern-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-origin: border-box;
+        background-attachment: fixed;
+        .faq-accordion-card {
+            padding: 1.5rem;
+            .faq-accordion-card-header {
+                gap: 0px;
+                h1 {
+                    font-size: 2rem;
+                }
+            }
+            .faq-accordion-card-body {
+                .faq-accordion-card-body-content {
+                    .faq-accordion-card-body-content-question {
+                        padding: 0px;
+                        h3 {
+                            font-size: 1rem;
+                        }
+                    }
+                    .faq-accordion-card-body-content-answer {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
 }
